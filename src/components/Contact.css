@@ -3,6 +3,7 @@
     padding: 6rem 2rem;
     background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1e 100%);
     position: relative;
+    overflow-x: hidden;
 }
 
 .contact::before {
