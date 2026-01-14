@@ -155,6 +155,19 @@ const projectsData = [
   },
   {
     id: 13,
+    title: "Custom Portfolio Website",
+    category: "Frontend",
+    description:
+      "A fully custom personal portfolio website built from scratch using Angular, TypeScript, and Bootstrap to showcase projects, skills, and experience with a clean, responsive, and professional UI.",
+    image: "👩‍💻",
+    imageProject: "/images/custom-portfolio.png",
+    tags: ["Angular", "TypeScript", "Bootstrap", "HTML", "CSS"],
+    github:
+      "https://github.com/marwa-nasser-mohamed-abdelmatloub/My-Custom_Portfolio.git",
+    live: "",
+  },
+  {
+    id: 14,
     title: "Personal CV Website",
     category: "Frontend",
     description:
@@ -167,7 +180,7 @@ const projectsData = [
     live: "",
   },
   {
-    id: 14,
+    id: 15,
     title: "ElZero Template 1",
     category: "Frontend",
     description:
@@ -180,7 +193,7 @@ const projectsData = [
     live: "",
   },
   {
-    id: 15,
+    id: 16,
     title: "ElZero Template 2",
     category: "Frontend",
     description:
@@ -193,7 +206,7 @@ const projectsData = [
     live: "",
   },
   {
-    id: 16,
+    id: 17,
     title: "ElZero Template 3",
     category: "Frontend",
     description:
