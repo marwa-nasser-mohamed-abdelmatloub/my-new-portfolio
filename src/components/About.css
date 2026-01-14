@@ -188,24 +188,149 @@
 
 @media (max-width: 768px) {
     .about {
-        padding: 4rem 1.5rem;
+        padding: 3rem 1.5rem;
+        overflow-x: hidden;
+    }
+
+    .about::before {
+        width: 300px;
+        height: 300px;
+        top: -5%;
+        right: -20%;
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.95rem;
     }
 
     .about-grid {
         gap: 1.5rem;
+        grid-template-columns: 1fr;
+    }
+
+    .about-card {
+        padding: 1.5rem;
+    }
+
+    .card-icon {
+        font-size: 2.5rem;
+    }
+
+    .about-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .about-card p {
+        font-size: 0.85rem;
     }
 
     .about-stats {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
-        padding: 2rem;
+        padding: 1.5rem;
+        margin: 2rem 0;
     }
 
     .stat-item h3 {
         font-size: 2rem;
+    }
+
+    .stat-item p {
+        font-size: 0.85rem;
+    }
+
+    .about-description {
+        max-width: 100%;
+    }
+
+    .about-description p {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding: 2.5rem 1rem;
+        min-height: auto;
+    }
+
+    .about::before {
+        width: 200px;
+        height: 200px;
+        top: 0;
+        right: -30%;
+    }
+
+    .section-container {
+        width: 100%;
+    }
+
+    .section-header {
+        margin-bottom: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .about-grid {
+        gap: 1.2rem;
+        grid-template-columns: 1fr;
+        margin-bottom: 2rem;
+    }
+
+    .about-card {
+        padding: 1.2rem;
+    }
+
+    .card-icon {
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .about-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .about-card p {
+        font-size: 0.8rem;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1.2rem;
+        margin: 1.5rem 0;
+    }
+
+    .stat-item h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .stat-item p {
+        font-size: 0.75rem;
+    }
+
+    .about-description {
+        max-width: 100%;
+    }
+
+    .about-description p {
+        font-size: 0.85rem;
+        margin-bottom: 0.8rem;
+        line-height: 1.5;
     }
 }

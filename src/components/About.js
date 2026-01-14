@@ -15,14 +15,14 @@ const About = () => {
       title: "Education",
       description: (
         <>
-          <p>
+          <div>
             <strong>Bachelor of Arts, Islamic Archaeology</strong>
             <br /> Minya University, Grade: Good
-          </p>
-          <p>
+          </div>
+          <div>
             <strong>ITI Open Source Track</strong> <br /> Minya Branch
             Professional Training Program
-          </p>
+          </div>
         </>
       ),
     },
@@ -56,19 +56,19 @@ const About = () => {
           <p className="section-subtitle">Get to know me better</p>
         </div>
 
-<div className="about-grid">
-  {aboutCards.map((card, idx) => (
-    <div
-      key={idx}
-      className={`about-card glass fade-in`}
-      style={{ "--delay": idx * 0.1 + "s" }}
-    >
-      <div className="card-icon">{card.icon}</div>
-      <h3>{card.title}</h3>
-      <div>{card.description}</div> 
-    </div>
-  ))}
-</div>
+        <div className="about-grid">
+          {aboutCards.map((card, idx) => (
+            <div
+              key={idx}
+              className={`about-card glass fade-in`}
+              style={{ "--delay": idx * 0.1 + "s" }}
+            >
+              <div className="card-icon">{card.icon}</div>
+              <h3>{card.title}</h3>
+              <div>{card.description}</div>
+            </div>
+          ))}
+        </div>
 
         <div className="about-stats">
           {stats.map((stat, idx) => (
@@ -85,18 +85,19 @@ const About = () => {
 
         <div className="about-description">
           <p>
-            I'm Marwa Nasser Mohamed Adeklmatloub, a self-motivated Full Stack Developer with
-            6+ months of freelance experience building dynamic web applications.
-            Currently undergoing intensive training at ITI's Open Source Track to
-            enhance my skills in modern development practices.
+            I'm Marwa Nasser Mohamed Adeklmatloub, a self-motivated Full Stack
+            Developer with 6+ months of freelance experience building dynamic
+            web applications. Currently undergoing intensive training at ITI's
+            Open Source Track to enhance my skills in modern development
+            practices.
           </p>
           <p>
-            My expertise spans across frontend frameworks (React, Angular, Vue.js,
-            Next.js) and backend technologies (Node.js, Express, Laravel, Django,
-            Python). I'm passionate about creating beautiful, user-friendly web
-            experiences while maintaining clean, efficient code. Known for
-            adaptability and a strong desire to learn and grow within development
-            teams.
+            My expertise spans across frontend frameworks (React, Angular,
+            Vue.js, Next.js) and backend technologies (Node.js, Express,
+            Laravel, Django, Python). I'm passionate about creating beautiful,
+            user-friendly web experiences while maintaining clean, efficient
+            code. Known for adaptability and a strong desire to learn and grow
+            within development teams.
           </p>
         </div>
       </div>
