@@ -191,6 +191,24 @@
     cursor: not-allowed;
 }
 
+.error {
+    color: #ff4757;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+
+.success-msg {
+    color: #2ed573;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 1rem;
+    background: rgba(46, 213, 115, 0.1);
+    border-radius: 8px;
+    border-left: 3px solid #2ed573;
+}
+
 @media (max-width: 768px) {
     .contact {
         padding: 4rem 1.5rem;

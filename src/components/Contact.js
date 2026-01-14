@@ -6,7 +6,8 @@ import {
   FaGithub,
   FaLinkedin,
   FaTwitter,
-  FaFacebook
+  FaFacebook,
+  FaWhatsapp,
 } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
@@ -57,10 +58,10 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        "service_deu8ybt", // replace with your EmailJS Service ID
-        "template_mb51tqa", // replace with your EmailJS Template ID
+        "service_avmhq78",
+        "template_4cwjd7q",
         formData,
-        "lYQVpT2b0WSYHw-ZI" // replace with your EmailJS Public Key
+        "PVsiJ1U3jyUjGkvSM"
       );
 
       setSubmitted(true);
@@ -103,7 +104,7 @@ const Contact = () => {
               <FaPhone size={24} />
               <div>
                 <h3>Phone</h3>
-                <p>+20 101 056 0217</p>
+                <p>+201010560217</p>
               </div>
             </a>
 
@@ -150,6 +151,14 @@ const Contact = () => {
                 >
                   <FaFacebook size={24} />
                 </a>
+                <a
+                  href="https://wa.me/201010560217"
+                  className="social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaWhatsapp size={24} />
+                </a>
               </div>
             </div>
           </div>
@@ -170,7 +179,7 @@ const Contact = () => {
             <div className="form-group">
               <label htmlFor="email">Email</label>
               <input
-                type="email"
+                type="text"
                 id="email"
                 name="email"
                 value={formData.email}
