@@ -56,19 +56,19 @@ const About = () => {
           <p className="section-subtitle">Get to know me better</p>
         </div>
 
-        <div className="about-grid">
-          {aboutCards.map((card, idx) => (
-            <div
-              key={idx}
-              className={`about-card glass fade-in`}
-              style={{ "--delay": idx * 0.1 + "s" }}
-            >
-              <div className="card-icon">{card.icon}</div>
-              <h3>{card.title}</h3>
-              <p>{card.description}</p>
-            </div>
-          ))}
-        </div>
+<div className="about-grid">
+  {aboutCards.map((card, idx) => (
+    <div
+      key={idx}
+      className={`about-card glass fade-in`}
+      style={{ "--delay": idx * 0.1 + "s" }}
+    >
+      <div className="card-icon">{card.icon}</div>
+      <h3>{card.title}</h3>
+      <div>{card.description}</div> 
+    </div>
+  ))}
+</div>
 
         <div className="about-stats">
           {stats.map((stat, idx) => (
